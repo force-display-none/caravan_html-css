@@ -4,6 +4,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+/* clearfixを追加*/
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
 .header {
     width: 100%; /*横幅いっぱい*/
     height: 120px; /*高さ120px*/
@@ -31,8 +37,9 @@
 }
 .main {
 	width: 100%;  /*横幅*/
+	/*height削除*/
     /*overflow: hidden;を追加*/
-    overflow: hidden;
+    /*clearfix検証のためoverflow: hidden;削除*/
 	background-color: green;  /*背景色*/
 }
 .blog {
