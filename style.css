@@ -35,14 +35,16 @@
 	background-color: green;  /*背景色*/
 }
 .blog {
-	width: 600px;
-	height: 600px;
-	background-color: limegreen;
+	width: 600px;  /*横幅*/
+	height: 600px;  /*高さ*/
+	background-color: limegreen;  /*背景色*/
+	float: left;  /*要素を左揃えで並べる*/
 }
 .sidebar {
-	width: 240px;
-	height: 600px;
-	background-color: palegreen;
+	width: 240px;  /*横幅*/
+	height: 600px;  /*高さ*/
+	background-color: palegreen;  /*背景色*/
+	float: left;  /*要素を左揃えで並べる*/
 }
 .footer {
 	width: 100%;  /*横幅*/
