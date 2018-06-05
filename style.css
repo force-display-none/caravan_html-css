@@ -31,7 +31,8 @@
 }
 .main {
 	width: 100%;  /*横幅*/
-
+    /*overflow: hidden;を追加*/
+    overflow: hidden;
 	background-color: green;  /*背景色*/
 }
 .blog {
