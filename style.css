@@ -14,6 +14,11 @@
 	height: 100px;  /*高さ*/
 	background-color: hotpink;  /*背景色*/
 }
+.header-bottom {
+	width: 100%;  /*横幅*/
+	height: 100px;  /*高さ*/
+	background-color: pink;  /*背景色*/
+}
 .main-visual {
 	width: 100%;  /*横幅いっぱい*/
 	height: 300px;  /*高さ*/
