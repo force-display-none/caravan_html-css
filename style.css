@@ -11,12 +11,12 @@
 }
 .header-top {
 	width: 100%;  /*横幅*/
-	height: 100px;  /*高さ*/
+	height: 70px;  /*高さ*/
 	background-color: hotpink;  /*背景色*/
 }
 .header-bottom {
 	width: 100%;  /*横幅*/
-	height: 100px;  /*高さ*/
+	height: 50px;  /*高さ*/
 	background-color: pink;  /*背景色*/
 }
 .main-visual {
@@ -34,4 +34,3 @@
 	height: 120px;  /*高さ*/
 	background-color: blue;  /*背景色*/
 }
-
