@@ -15,6 +15,10 @@ header {
 	padding: 15px 0;  /*borderより内側の余白*/
 	margin: 0 auto;  /*borderより外側の余白*/
 }
+/*headerタグ内のheaderlineクラスにのみ反映される*/
+header .headline {
+	font-size: 32px;
+}
 .main-visual {
 	width: 100%;  /*横幅いっぱい*/
 	height: 300px;  /*高さ*/
