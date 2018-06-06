@@ -39,7 +39,9 @@
 	width: 840px;  /*横幅*/
 	/*height削除*/
     /*overflow: hidden;を追加*/
-    /*clearfix検証のためoverflow: hidden;削除*/
+    /*clearfix検証のためoverflow: hidden;削除/
+    /*中央寄せ(余白がないと出来ない)*/
+    margin: 0 auto;
 	background-color: green;  /*背景色*/
 }
 .blog {
