@@ -3,6 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #6c6b6b;  /*文字の色を統一*/
+}
+a {
+	text-decoration: none;  /*文字装飾機能の指定を無し(リンク文字の下線を消す)*/
 }
 /* clearfixを追加*/
 .clearfix::after {
@@ -21,7 +25,7 @@ header .headline {
 	font-size: 32px;
 }
 .nav-list {
-	text-align: center;
+	text-align: center;  /*テキストの行揃え位置について要素を軸に文字を中央寄せ*/
 	padding: 10px 0;  /*borderより内側の余白*/
 	margin: 0 auto;  /*borderより外側の余白*/
 }
@@ -64,4 +68,10 @@ header .headline {
 footer {
 	width: 100%;  /*横幅*/
 	height: 120px;  /*高さ*/
+	text-align: center;  /*要素を軸に文字を中央に寄せる*/
+	padding: 50px 0;  /*borderより内側の余白を指定*/
+	background-color: #848282;
+}
+.front-text {
+	color: #fff;
 }
