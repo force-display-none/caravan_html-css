@@ -75,10 +75,29 @@ main {
 	text-align: center;
 	line-height: 0.6;
 }
+.blog-box {
+	 padding-top: 50px;
+}
 .blog-item {
 	 padding-bottom: 20px;
 	 margin-bottom: 20px;
 	 border-bottom: 1px solid #f7f7f7;
+}
+.blog-image {
+     height: 180px;
+     float: left;
+}
+.blog-text {
+	 padding-top: 30px;
+	 padding-left: 25px;
+	 float: left;
+}
+.blog-text-headline {
+	 padding-bottom: 15px;
+}
+.blog-date {
+	 display: inline-block;
+	 font-size: 12px;
 }
 .category {
 	display: inline-block;
