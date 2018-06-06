@@ -38,14 +38,15 @@ header .headline {
 	width: 100%;  /*横幅いっぱい*/
 	height: 300px;  /*高さ*/
     background-image: url(img/mv.jpg);
-    background-size:  cover;  /*縦横比を維持したまま背景の表示領域を覆うように表示*/
-    background-size: center;  /* 背景画像を中央に配置*/
+    background-size: cover;  /*縦横比を維持したまま背景の表示領域を覆うように表示*/
+    background-position: center;  /* 背景画像を中央に配置*/
 }
 .main-visual-content {
 	width: 40%;  /*画面幅が変わってもバランスを保てるように%で指定*/
 	height: 300px;  /*親の高さに揃える*/
-	background-color: rgba(0,0,0,0.5);
-
+	background-color: rgba(0,0,0,0.5);  /*背景色を半透明の黒にする*/
+    text-align: center;
+    padding-top: 105px
 }
 .main {
 	width: 840px;  /*横幅*/
