@@ -9,7 +9,16 @@ a {
 	text-decoration: none;  /*文字装飾機能の指定を無し(リンク文字の下線を消す)*/
 }
 /* clearfixを追加*/
+/*擬似要素(::after)
+擬似要素は、CSSのセレクタに追加して記述する形をとります。
+要素内の特定の文字や行に対してスタイルを指定したり、文字や画像を追加することができます。
+*/
 .clearfix::after {
+	/*contentプロパティは、要素の直前または直後に、文字列や画像などのコンテンツを挿入する際に使用します。""を記述します。
+擬似要素::beforeと::afterのみにしか使用することのできないプロパティです。
+先ほど::afterにより「目印をつけます」と指示したところに、「人間の目には見えない目印""」をつけているということになります。*/
+/*::afterとcontent:"";を用いてfloatされた要素の親要素の直後に空白の要素を挿入。挿入された空白を横一杯に伸ばし壁の様にしているのがdisplay:block;*/
+/*作成された壁にfloatの回り込みを解除する機能をclear:both;で与えている*/
 	content: "";
 	display: block;
 	clear: both;
@@ -18,7 +27,7 @@ header, nav, h2, .main-visual, footer {
 	font-family: Chalkduster, "Bradley Hand", Courier, "Segoe Print", sans-serif;
 }
 header {
-	position: relative; /* #socialの絶対位置指定の基準位置を変更
+	position: relative; /* #socialの絶対位置指定の基準位置を変更*/
 	width: 90%;  /*横幅*/
 	padding: 15px 0;  /*borderより内側の余白*/
 	margin: 0 auto;  /*borderより外側の余白*/
@@ -194,29 +203,65 @@ footer {
 	padding: 50px 0;  /*borderより内側の余白を指定*/
 	background-color: #848282;
 }
-.front-text {
+.footer-text {
 	color: #fff;
 }
-/*全ての画面で適用される設定です*/
-.social i {
-	color: black;
-}
-/*タブレット横置き(1024px)程度の大きさ以下に適用される設定です*/
-@media screen and (max-width:1024px) {
-	.social i {
-		color: green;
+/*@media all and () というように、それぞれの単語の間だけでなく、
+andと()の間にも半角スペースが空いていることにも気を付けてください。
+こちらのスペースを1ヶ所忘れてしまうだけでmediaqueriesの宣言が機能しなくなります。*/
+@media screen and (max-width: 425px) {
+	header {
+		width: 100%;
 	}
-}
-/*タブレット縦置きサイズ(768px)程度の画面の大きさ以下に適用される設定です*/
-@media screen and (max-width:768px) {
-	.social i {
-		color: red;
+	.nav-list {
+		width: 100%;
 	}
-
-}
-/*スマートフォンサイズ(425px)程度の画面の大きさ以下に適用される設定です*/
-@media screen and (max-width:425px) {
-	.social i {
-		color: blue;
+	.nav-list-item {
+		width: 100%;
+		margin: 0 0 10px 0;
 	}
-}
+	.social {
+		display: none;
+	}
+	.main-visual-content {
+		width: 100%;
+	}
+	main {
+		width: 100%;
+	}
+	.blog {
+		width: 100%;
+		margin: 0;
+	}
+	.blog-box {
+		padding-left: 2%;
+		padding-right: 2%;
+	}
+	.blog-image {
+		width: 49%;
+	}
+	.blog-text {
+		width: 49%;
+		padding-top: 5px;
+	}
+	.blog-date {
+		font-size: 16px;
+	}
+	.category {
+		display: none;
+	}
+	.sidebar {
+		width: 100%;
+		padding-left: 3%;
+		padding-right: 3%;
+	}
+	.instagram-box {
+		width: 48%;
+		padding-top: 48%;
+	}
+	.instagram-box:nth-child(odd) {
+		margin-right: 4%;
+	}
+	.pagination {
+		margin-bottom: 50PX;
+	}}

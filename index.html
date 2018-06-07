@@ -1,17 +1,33 @@
+<!-- ドキュメントタイプはこのHTMLファイルがどのバージョンを使って書かれているかを宣言するタグです。ブラウザがHTMLファイルとして認識するために必要なので、必ず書く必要があります。 -->
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- meta要素は、文章に関する情報を指定するものです。この"UTF-8"というのは文字コードといい、コンピュータでの文字の処理方法を指定しています。 -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,inisial-scale=1.0">
+    <!-- width=device-width 閲覧されるデバイスの横幅に応じて可変とする
+initial-scale=1.0 サイトを開いたときの倍率は等倍にする
+ -->
+ <!-- content属性値
+viewport設定時に必要となるcontent属性値は
+・width=device-width
+・initial-scale=1.0
+の2つではなく、こちらのどちらか一方です。
+上記2点は同じ意味を持つので、片方の記述でviewportの役割を果たします。
+ -->
+    <meta name="viewport" content="width=device-width">
     <!-- CDNを用いてFont Awesomeを導入する(Font Awesome導入の記述は、style.css導入の記述よりも上に配置する) -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css">
     <!-- CSSファイルの読み込み -->
     <link rel="stylesheet" href="style.css">
+    <!-- ここで入力したタイトルは、ページ上には反映されませんが、ブラウザのツールバーや検索エンジンの検索結果のページ名になります。 -->
     <title>CARAVAN</title>
 </head>
+<!-- body要素には、ブラウザで実際に見える部分に関する情報を記入します。
+ -->
 <body>
     <!-- header -->
     <header>
+      <!-- <h>タグはheadlineの略で見出しを表すタグです。 -->
       <h1 class="headline">
         <a href="index.html">CARAVAN</a>
       </h1>
@@ -21,7 +37,16 @@
         <i class="fab fa-instagram"></i>
       </div>
     </header>
+    <!-- <nav>タグは<header>タグや<footer>タグと同様にレイアウト、すなわち枠を作成するためのタグです。
+今回のようなナビゲーションメニューを作成する際に使用します。
+ -->
     <nav>
+      <!-- <ul>タグは unordered list の略称です。日本語では「箇条書きのリスト」という意味を持ちます。
+また、ordered list を指す<ol>タグも存在します。
+こちらは日本語で「番号付きのリスト」という意味です。
+また、<ul>タグと<ol>タグは、共に子要素に<li>タグを持ちます。
+
+ -->
       <ul class="nav-list">
         <li class="nav-list-item">
           <a href="index.html">Home</a>
@@ -45,6 +70,7 @@
       </div>
     </div>
     <!-- main -->
+    <!-- clearfix(クリアフィックス)を設定してfloatの副作用で親要素の高さが0になってしまう現象を解決します -->
     <main class="clearfix">
       <section class="blog">
         <h2 class="blog-headline">Recent Blogs</h2>
@@ -165,7 +191,7 @@
     </main>
     <!-- footer -->
     <footer>
-      <p class="foter-text"> © All rights recerved by Infratop.Inc.</p>
+      <p class="footer-text"> © All rights recerved by Infratop.Inc.</p>
     </footer>
 </body>
 </html>
