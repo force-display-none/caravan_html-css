@@ -15,7 +15,7 @@ a {
 	clear: both;
 }
 header {
-	position: relative;
+	position: relative; /* #socialの絶対位置指定の基準位置を変更
 	width: 90%;  /*横幅*/
 	padding: 15px 0;  /*borderより内側の余白*/
 	margin: 0 auto;  /*borderより外側の余白*/
@@ -24,6 +24,11 @@ header {
 /*headerタグ内のheaderlineクラスにのみ反映される*/
 header .headline {
 	font-size: 32px;
+}
+.social {
+	position: absolute;   /* .headerの左上を基準に位置を指定する */
+	top: 22px;  /* .headerの左上から22px下に移動 */
+	right: 22px;  /* .headerの右上から22px右に移動 */
 }
 .social i {
 	display: inline-block;
