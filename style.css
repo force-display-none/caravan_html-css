@@ -15,6 +15,7 @@ a {
 	clear: both;
 }
 header {
+	position: relative;
 	width: 90%;  /*横幅*/
 	padding: 15px 0;  /*borderより内側の余白*/
 	margin: 0 auto;  /*borderより外側の余白*/
@@ -23,6 +24,10 @@ header {
 /*headerタグ内のheaderlineクラスにのみ反映される*/
 header .headline {
 	font-size: 32px;
+}
+.social i {
+	display: inline-block;
+	margin-left: 20px;
 }
 .nav-list {
 	text-align: center;  /*テキストの行揃え位置について要素を軸に文字を中央寄せ*/
